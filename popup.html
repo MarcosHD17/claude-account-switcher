@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Cuentas de Claude</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Cuentas de Claude</h1>
+    <p id="hint"></p>
+  </header>
+
+  <ul id="profiles"></ul>
+
+  <form id="add-form" hidden>
+    <input id="name" placeholder="Nombre (ej. Personal)" maxlength="24" autocomplete="off">
+    <button type="submit">Guardar sesión actual</button>
+  </form>
+
+  <button id="new-login" type="button" hidden>Añadir otra cuenta…</button>
+
+  <p id="status" role="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
